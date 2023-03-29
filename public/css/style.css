@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(72, 66, 66, 0.644);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+.modal-content{
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    width: 300px;
+    border-radius:30px;
+}
+
+.movie-poster {
+    width: 300px;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius:30px;
+    position: relative;
+    left: -50rem;
+    animation: slide-from-left 3.5s ease-in-out forwards;
+}
+
+@keyframes slide-from-left {
+    80% {left: 1.5rem;}
+    100% {left: 0;}
+}
